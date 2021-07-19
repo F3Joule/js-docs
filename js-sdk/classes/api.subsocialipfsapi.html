@@ -259,7 +259,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Aggregated api for working with IPFS to get the content of the spaces of posts and profiles</p>
+						<p>Aggregated API to work with IPFS: get the content of the spaces of posts and profiles.</p>
 					</div>
 				</div>
 			</section>
@@ -330,7 +330,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dappforce/subsocial-js/blob/aca316e/packages/api/src/api/ipfs.ts#L77">packages/api/src/api/ipfs.ts:77</a></li>
+									<li>Defined in <a href="https://github.com/F3Joule/dappforce-subsocial-js/blob/899fd50/packages/api/src/api/ipfs.ts#L58">packages/api/src/api/ipfs.ts:58</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -357,12 +357,12 @@
 					<div class="tsd-signature tsd-kind-icon">ipfs<wbr>Node<wbr>Url<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/dappforce/subsocial-js/blob/aca316e/packages/api/src/api/ipfs.ts#L74">packages/api/src/api/ipfs.ts:74</a></li>
+							<li>Defined in <a href="https://github.com/F3Joule/dappforce-subsocial-js/blob/899fd50/packages/api/src/api/ipfs.ts#L54">packages/api/src/api/ipfs.ts:54</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Ipfs node readonly geteway</p>
+							<p>IPFS node readonly gateway</p>
 						</div>
 					</div>
 				</section>
@@ -372,12 +372,12 @@
 					<div class="tsd-signature tsd-kind-icon">offchain<wbr>Url<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/dappforce/subsocial-js/blob/aca316e/packages/api/src/api/ipfs.ts#L76">packages/api/src/api/ipfs.ts:76</a></li>
+							<li>Defined in <a href="https://github.com/F3Joule/dappforce-subsocial-js/blob/899fd50/packages/api/src/api/ipfs.ts#L57">packages/api/src/api/ipfs.ts:57</a></li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography">
 						<div class="lead">
-							<p>Offchain geteway</p>
+							<p>Offchain gateway</p>
 						</div>
 					</div>
 				</section>
@@ -387,7 +387,7 @@
 					<div class="tsd-signature tsd-kind-icon">use<wbr>Server<span class="tsd-signature-symbol">:</span> <a href="../modules.html#useserverprops" class="tsd-signature-type" data-tsd-kind="Type alias">UseServerProps</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/dappforce/subsocial-js/blob/aca316e/packages/api/src/api/ipfs.ts#L77">packages/api/src/api/ipfs.ts:77</a></li>
+							<li>Defined in <a href="https://github.com/F3Joule/dappforce-subsocial-js/blob/899fd50/packages/api/src/api/ipfs.ts#L58">packages/api/src/api/ipfs.ts:58</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -398,27 +398,34 @@
 					<a name="findcomment" class="tsd-anchor"></a>
 					<h3>find<wbr>Comment</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">find<wbr>Comment<span class="tsd-signature-symbol">(</span>cid<span class="tsd-signature-symbol">: </span><a href="../modules.html#ipfscid" class="tsd-signature-type" data-tsd-kind="Type alias">IpfsCid</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules.html#commentcontent" class="tsd-signature-type" data-tsd-kind="Type alias">CommentContent</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">find<wbr>Comment<span class="tsd-signature-symbol">(</span>cid<span class="tsd-signature-symbol">: </span><a href="../modules.html#ipfscid" class="tsd-signature-type" data-tsd-kind="Type alias">IpfsCid</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">CommonPostContent</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dappforce/subsocial-js/blob/aca316e/packages/api/src/api/ipfs.ts#L226">packages/api/src/api/ipfs.ts:226</a></li>
+									<li>Defined in <a href="https://github.com/F3Joule/dappforce-subsocial-js/blob/899fd50/packages/api/src/api/ipfs.ts#L271">packages/api/src/api/ipfs.ts:271</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Get single comment content by cid</p>
+									<p>Find and load off-chain information about a comment from IPFS by a given <code>cid</code>.</p>
 								</div>
+								<p>Comment information only exists if there is a corresponding JSON file that represents the comment&#39;s content on
+								IPFS.</p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>cid: <a href="../modules.html#ipfscid" class="tsd-signature-type" data-tsd-kind="Type alias">IpfsCid</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>IPFS content id of a desired comment.</p>
+									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules.html#commentcontent" class="tsd-signature-type" data-tsd-kind="Type alias">CommentContent</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">CommonPostContent</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>Data about a desired comment from IPFS. If no corresponding comments to given <code>id</code>, <code>undefined</code> is
+							returned.</p>
 						</li>
 					</ul>
 				</section>
@@ -426,27 +433,34 @@
 					<a name="findcomments" class="tsd-anchor"></a>
 					<h3>find<wbr>Comments</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">find<wbr>Comments<span class="tsd-signature-symbol">(</span>cids<span class="tsd-signature-symbol">: </span><a href="../modules.html#ipfscid" class="tsd-signature-type" data-tsd-kind="Type alias">IpfsCid</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="../modules.html#commentcontent" class="tsd-signature-type" data-tsd-kind="Type alias">CommentContent</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">find<wbr>Comments<span class="tsd-signature-symbol">(</span>cids<span class="tsd-signature-symbol">: </span><a href="../modules.html#ipfscid" class="tsd-signature-type" data-tsd-kind="Type alias">IpfsCid</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">CommonPostContent</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dappforce/subsocial-js/blob/aca316e/packages/api/src/api/ipfs.ts#L198">packages/api/src/api/ipfs.ts:198</a></li>
+									<li>Defined in <a href="https://github.com/F3Joule/dappforce-subsocial-js/blob/899fd50/packages/api/src/api/ipfs.ts#L207">packages/api/src/api/ipfs.ts:207</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Get comments content array by cid</p>
+									<p>Find and load an array of off-chain information about comments from IPFS by a given array of <code>cids</code>.</p>
 								</div>
+								<p>Comment information only exists if there is a corresponding JSON file that represents the comments&#39; content on
+								IPFS.</p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>cids: <a href="../modules.html#ipfscid" class="tsd-signature-type" data-tsd-kind="Type alias">IpfsCid</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>An array of IPFS content ids of desired comments.</p>
+									</div>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="../modules.html#commentcontent" class="tsd-signature-type" data-tsd-kind="Type alias">CommentContent</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">CommonPostContent</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>An array of data about desired comments from IPFS. If no corresponding comments to given array of <code>cids</code>,
+							an empty array is returned.</p>
 						</li>
 					</ul>
 				</section>
@@ -460,21 +474,26 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dappforce/subsocial-js/blob/aca316e/packages/api/src/api/ipfs.ts#L221">packages/api/src/api/ipfs.ts:221</a></li>
+									<li>Defined in <a href="https://github.com/F3Joule/dappforce-subsocial-js/blob/899fd50/packages/api/src/api/ipfs.ts#L256">packages/api/src/api/ipfs.ts:256</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Get single post content by cid</p>
+									<p>Find and load off-chain information about a post from IPFS by a given <code>cid</code>.</p>
 								</div>
+								<p>Post information only exists if there is a corresponding JSON file that represents the post&#39;s content on IPFS.</p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>cid: <a href="../modules.html#ipfscid" class="tsd-signature-type" data-tsd-kind="Type alias">IpfsCid</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>IPFS content id of a desired post.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules.html#postcontent" class="tsd-signature-type" data-tsd-kind="Type alias">PostContent</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>Data about a desired post from IPFS. If no corresponding post to given <code>id</code>, <code>undefined</code> is returned.</p>
 						</li>
 					</ul>
 				</section>
@@ -488,21 +507,27 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dappforce/subsocial-js/blob/aca316e/packages/api/src/api/ipfs.ts#L193">packages/api/src/api/ipfs.ts:193</a></li>
+									<li>Defined in <a href="https://github.com/F3Joule/dappforce-subsocial-js/blob/899fd50/packages/api/src/api/ipfs.ts#L192">packages/api/src/api/ipfs.ts:192</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Get posts content array by cid</p>
+									<p>Find and load an array of off-chain information about posts from IPFS by a given array of <code>cids</code>.</p>
 								</div>
+								<p>Post information only exists if there is a corresponding JSON file that represents the posts&#39; content on IPFS.</p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>cids: <a href="../modules.html#ipfscid" class="tsd-signature-type" data-tsd-kind="Type alias">IpfsCid</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>An array of IPFS content ids of desired posts.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="../modules.html#postcontent" class="tsd-signature-type" data-tsd-kind="Type alias">PostContent</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>An array of data about desired posts from IPFS. If no corresponding posts to given array of <code>cids</code>, an
+							empty array is returned.</p>
 						</li>
 					</ul>
 				</section>
@@ -516,21 +541,28 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dappforce/subsocial-js/blob/aca316e/packages/api/src/api/ipfs.ts#L231">packages/api/src/api/ipfs.ts:231</a></li>
+									<li>Defined in <a href="https://github.com/F3Joule/dappforce-subsocial-js/blob/899fd50/packages/api/src/api/ipfs.ts#L286">packages/api/src/api/ipfs.ts:286</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Get single profile content by cid</p>
+									<p>Find and load off-chain information about a profile from IPFS by a given <code>cid</code>.</p>
 								</div>
+								<p>Profile information only exists if there is a corresponding JSON file that represents the profile&#39;s content on
+								IPFS.</p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>cid: <a href="../modules.html#ipfscid" class="tsd-signature-type" data-tsd-kind="Type alias">IpfsCid</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>IPFS content id of a desired profile.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules.html#profilecontent" class="tsd-signature-type" data-tsd-kind="Type alias">ProfileContent</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>Data about a desired profile from IPFS. If no corresponding profiles to given <code>id</code>, <code>undefined</code> is
+							returned.</p>
 						</li>
 					</ul>
 				</section>
@@ -544,21 +576,28 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dappforce/subsocial-js/blob/aca316e/packages/api/src/api/ipfs.ts#L203">packages/api/src/api/ipfs.ts:203</a></li>
+									<li>Defined in <a href="https://github.com/F3Joule/dappforce-subsocial-js/blob/899fd50/packages/api/src/api/ipfs.ts#L222">packages/api/src/api/ipfs.ts:222</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Get profiles content array by cid</p>
+									<p>Find and load an array of off-chain information about profiles from IPFS by a given array of <code>cids</code>.</p>
 								</div>
+								<p>Profile information only exists if there is a corresponding JSON file that represents the profiles&#39; content on
+								IPFS.</p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>cids: <a href="../modules.html#ipfscid" class="tsd-signature-type" data-tsd-kind="Type alias">IpfsCid</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>An array of IPFS content ids of desired profiles.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="../modules.html#profilecontent" class="tsd-signature-type" data-tsd-kind="Type alias">ProfileContent</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>An array of data about desired profiles from IPFS. If no corresponding profiles to given array of <code>cids</code>,
+							an empty array is returned.</p>
 						</li>
 					</ul>
 				</section>
@@ -572,21 +611,26 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dappforce/subsocial-js/blob/aca316e/packages/api/src/api/ipfs.ts#L216">packages/api/src/api/ipfs.ts:216</a></li>
+									<li>Defined in <a href="https://github.com/F3Joule/dappforce-subsocial-js/blob/899fd50/packages/api/src/api/ipfs.ts#L243">packages/api/src/api/ipfs.ts:243</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Get single space content by cid</p>
+									<p>Find and load off-chain information about a space from IPFS by a given <code>cid</code>.</p>
 								</div>
+								<p>Space information only exists if there is a corresponding JSON file that represents the space&#39;s content on IPFS.</p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>cid: <a href="../modules.html#ipfscid" class="tsd-signature-type" data-tsd-kind="Type alias">IpfsCid</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>IPFS content id of a desired space.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules.html#spacecontent" class="tsd-signature-type" data-tsd-kind="Type alias">SpaceContent</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>Data about a desired space from IPFS. If no corresponding space to given <code>id</code>, <code>undefined</code> is returned.</p>
 						</li>
 					</ul>
 				</section>
@@ -600,21 +644,27 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dappforce/subsocial-js/blob/aca316e/packages/api/src/api/ipfs.ts#L188">packages/api/src/api/ipfs.ts:188</a></li>
+									<li>Defined in <a href="https://github.com/F3Joule/dappforce-subsocial-js/blob/899fd50/packages/api/src/api/ipfs.ts#L178">packages/api/src/api/ipfs.ts:178</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>Get spaces content array by cid</p>
+									<p>Find and load an array of off-chain information about spaces from IPFS by a given array of <code>cids</code>.</p>
 								</div>
+								<p>Space information only exists if there is a corresponding JSON file that represents the spaces&#39; content on IPFS.</p>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>cids: <a href="../modules.html#ipfscid" class="tsd-signature-type" data-tsd-kind="Type alias">IpfsCid</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>An array of IPFS content ids of desired spaces.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">Record</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><a href="../modules.html#spacecontent" class="tsd-signature-type" data-tsd-kind="Type alias">SpaceContent</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>An array of data about desired spaces from IPFS. If no corresponding spaces to given array of <code>cids</code>, an
+							empty array is returned.</p>
 						</li>
 					</ul>
 				</section>
@@ -628,7 +678,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dappforce/subsocial-js/blob/aca316e/packages/api/src/api/ipfs.ts#L210">packages/api/src/api/ipfs.ts:210</a></li>
+									<li>Defined in <a href="https://github.com/F3Joule/dappforce-subsocial-js/blob/899fd50/packages/api/src/api/ipfs.ts#L229">packages/api/src/api/ipfs.ts:229</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -660,7 +710,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dappforce/subsocial-js/blob/aca316e/packages/api/src/api/ipfs.ts#L181">packages/api/src/api/ipfs.ts:181</a></li>
+									<li>Defined in <a href="https://github.com/F3Joule/dappforce-subsocial-js/blob/899fd50/packages/api/src/api/ipfs.ts#L162">packages/api/src/api/ipfs.ts:162</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -692,7 +742,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dappforce/subsocial-js/blob/aca316e/packages/api/src/api/ipfs.ts#L137">packages/api/src/api/ipfs.ts:137</a></li>
+									<li>Defined in <a href="https://github.com/F3Joule/dappforce-subsocial-js/blob/899fd50/packages/api/src/api/ipfs.ts#L118">packages/api/src/api/ipfs.ts:118</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -729,7 +779,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dappforce/subsocial-js/blob/aca316e/packages/api/src/api/ipfs.ts#L160">packages/api/src/api/ipfs.ts:160</a></li>
+									<li>Defined in <a href="https://github.com/F3Joule/dappforce-subsocial-js/blob/899fd50/packages/api/src/api/ipfs.ts#L141">packages/api/src/api/ipfs.ts:141</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -766,7 +816,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dappforce/subsocial-js/blob/aca316e/packages/api/src/api/ipfs.ts#L124">packages/api/src/api/ipfs.ts:124</a></li>
+									<li>Defined in <a href="https://github.com/F3Joule/dappforce-subsocial-js/blob/899fd50/packages/api/src/api/ipfs.ts#L105">packages/api/src/api/ipfs.ts:105</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -797,7 +847,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dappforce/subsocial-js/blob/aca316e/packages/api/src/api/ipfs.ts#L107">packages/api/src/api/ipfs.ts:107</a></li>
+									<li>Defined in <a href="https://github.com/F3Joule/dappforce-subsocial-js/blob/899fd50/packages/api/src/api/ipfs.ts#L88">packages/api/src/api/ipfs.ts:88</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -828,7 +878,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dappforce/subsocial-js/blob/aca316e/packages/api/src/api/ipfs.ts#L238">packages/api/src/api/ipfs.ts:238</a></li>
+									<li>Defined in <a href="https://github.com/F3Joule/dappforce-subsocial-js/blob/899fd50/packages/api/src/api/ipfs.ts#L293">packages/api/src/api/ipfs.ts:293</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -850,13 +900,13 @@
 					<a name="savecomment" class="tsd-anchor"></a>
 					<h3>save<wbr>Comment</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">save<wbr>Comment<span class="tsd-signature-symbol">(</span>content<span class="tsd-signature-symbol">: </span><a href="../modules.html#commentcontent" class="tsd-signature-type" data-tsd-kind="Type alias">CommentContent</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/interfaces.ipfscid.html" class="tsd-signature-type" data-tsd-kind="Interface">IpfsCid</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">save<wbr>Comment<span class="tsd-signature-symbol">(</span>content<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">CommonPostContent</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/interfaces.ipfscid.html" class="tsd-signature-type" data-tsd-kind="Interface">IpfsCid</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dappforce/subsocial-js/blob/aca316e/packages/api/src/api/ipfs.ts#L312">packages/api/src/api/ipfs.ts:312</a></li>
+									<li>Defined in <a href="https://github.com/F3Joule/dappforce-subsocial-js/blob/899fd50/packages/api/src/api/ipfs.ts#L367">packages/api/src/api/ipfs.ts:367</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -867,7 +917,7 @@
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>content: <a href="../modules.html#commentcontent" class="tsd-signature-type" data-tsd-kind="Type alias">CommentContent</a></h5>
+									<h5>content: <span class="tsd-signature-type">CommonPostContent</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/interfaces.ipfscid.html" class="tsd-signature-type" data-tsd-kind="Interface">IpfsCid</a><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -884,7 +934,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dappforce/subsocial-js/blob/aca316e/packages/api/src/api/ipfs.ts#L254">packages/api/src/api/ipfs.ts:254</a></li>
+									<li>Defined in <a href="https://github.com/F3Joule/dappforce-subsocial-js/blob/899fd50/packages/api/src/api/ipfs.ts#L309">packages/api/src/api/ipfs.ts:309</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -912,7 +962,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dappforce/subsocial-js/blob/aca316e/packages/api/src/api/ipfs.ts#L271">packages/api/src/api/ipfs.ts:271</a></li>
+									<li>Defined in <a href="https://github.com/F3Joule/dappforce-subsocial-js/blob/899fd50/packages/api/src/api/ipfs.ts#L326">packages/api/src/api/ipfs.ts:326</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -940,7 +990,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dappforce/subsocial-js/blob/aca316e/packages/api/src/api/ipfs.ts#L305">packages/api/src/api/ipfs.ts:305</a></li>
+									<li>Defined in <a href="https://github.com/F3Joule/dappforce-subsocial-js/blob/899fd50/packages/api/src/api/ipfs.ts#L360">packages/api/src/api/ipfs.ts:360</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -968,7 +1018,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dappforce/subsocial-js/blob/aca316e/packages/api/src/api/ipfs.ts#L298">packages/api/src/api/ipfs.ts:298</a></li>
+									<li>Defined in <a href="https://github.com/F3Joule/dappforce-subsocial-js/blob/899fd50/packages/api/src/api/ipfs.ts#L353">packages/api/src/api/ipfs.ts:353</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -996,7 +1046,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dappforce/subsocial-js/blob/aca316e/packages/api/src/api/ipfs.ts#L91">packages/api/src/api/ipfs.ts:91</a></li>
+									<li>Defined in <a href="https://github.com/F3Joule/dappforce-subsocial-js/blob/899fd50/packages/api/src/api/ipfs.ts#L72">packages/api/src/api/ipfs.ts:72</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">

@@ -356,7 +356,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dappforce/subsocial-js/blob/aca316e/packages/api/src/api/substrate.ts#L31">packages/api/src/api/substrate.ts:31</a></li>
+									<li>Defined in <a href="https://github.com/F3Joule/dappforce-subsocial-js/blob/899fd50/packages/api/src/api/substrate.ts#L32">packages/api/src/api/substrate.ts:32</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -378,7 +378,7 @@
 					<div class="tsd-signature tsd-kind-icon">_api<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">ApiPromise</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/dappforce/subsocial-js/blob/aca316e/packages/api/src/api/substrate.ts#L31">packages/api/src/api/substrate.ts:31</a></li>
+							<li>Defined in <a href="https://github.com/F3Joule/dappforce-subsocial-js/blob/899fd50/packages/api/src/api/substrate.ts#L32">packages/api/src/api/substrate.ts:32</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -395,7 +395,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dappforce/subsocial-js/blob/aca316e/packages/api/src/api/substrate.ts#L45">packages/api/src/api/substrate.ts:45</a></li>
+									<li>Defined in <a href="https://github.com/F3Joule/dappforce-subsocial-js/blob/899fd50/packages/api/src/api/substrate.ts#L46">packages/api/src/api/substrate.ts:46</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">ApiPromise</span><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -409,22 +409,29 @@
 					<a name="findpost" class="tsd-anchor"></a>
 					<h3>find<wbr>Post</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">find<wbr>Post<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><a href="../modules.html#findstruct" class="tsd-signature-type" data-tsd-kind="Type alias">FindStruct</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules.html#anypostid" class="tsd-signature-type" data-tsd-kind="Type alias">AnyPostId</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/interfaces.post.html" class="tsd-signature-type" data-tsd-kind="Interface">Post</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">find<wbr>Post<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><a href="../modules.html#findstruct" class="tsd-signature-type" data-tsd-kind="Type alias">FindStruct</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules.html#anypostid" class="tsd-signature-type" data-tsd-kind="Type alias">AnyPostId</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/interfaces.post.html" class="tsd-signature-type" data-tsd-kind="Interface">Post</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dappforce/subsocial-js/blob/aca316e/packages/api/src/api/substrate.ts#L154">packages/api/src/api/substrate.ts:154</a></li>
+									<li>Defined in <a href="https://github.com/F3Joule/dappforce-subsocial-js/blob/899fd50/packages/api/src/api/substrate.ts#L204">packages/api/src/api/substrate.ts:204</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Find and load information about a post from Subsocial blockchain by a given <code>id</code> and <code>visibility</code> filter.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>__namedParameters: <a href="../modules.html#findstruct" class="tsd-signature-type" data-tsd-kind="Type alias">FindStruct</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules.html#anypostid" class="tsd-signature-type" data-tsd-kind="Type alias">AnyPostId</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>params: <a href="../modules.html#findstruct" class="tsd-signature-type" data-tsd-kind="Type alias">FindStruct</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules.html#anypostid" class="tsd-signature-type" data-tsd-kind="Type alias">AnyPostId</a><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/interfaces.post.html" class="tsd-signature-type" data-tsd-kind="Interface">Post</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>Data about desired post from Subsocial blockchain. If no corresponding post to given <code>id</code> and
+							<code>visibility</code>, <code>undefined</code> is returned.</p>
 						</li>
 					</ul>
 				</section>
@@ -432,22 +439,30 @@
 					<a name="findposts" class="tsd-anchor"></a>
 					<h3>find<wbr>Posts</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">find<wbr>Posts<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><a href="../modules.html#findstructs" class="tsd-signature-type" data-tsd-kind="Type alias">FindStructs</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules.html#anypostid" class="tsd-signature-type" data-tsd-kind="Type alias">AnyPostId</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/interfaces.post.html" class="tsd-signature-type" data-tsd-kind="Interface">Post</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">find<wbr>Posts<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><a href="../modules.html#findstructs" class="tsd-signature-type" data-tsd-kind="Type alias">FindStructs</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules.html#anypostid" class="tsd-signature-type" data-tsd-kind="Type alias">AnyPostId</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/interfaces.post.html" class="tsd-signature-type" data-tsd-kind="Interface">Post</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dappforce/subsocial-js/blob/aca316e/packages/api/src/api/substrate.ts#L133">packages/api/src/api/substrate.ts:133</a></li>
+									<li>Defined in <a href="https://github.com/F3Joule/dappforce-subsocial-js/blob/899fd50/packages/api/src/api/substrate.ts#L152">packages/api/src/api/substrate.ts:152</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Find and load an array of information about posts from Subsocial blockchain by a given array of <code>ids</code> and
+									<code>visibility</code> filter.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>__namedParameters: <a href="../modules.html#findstructs" class="tsd-signature-type" data-tsd-kind="Type alias">FindStructs</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules.html#anypostid" class="tsd-signature-type" data-tsd-kind="Type alias">AnyPostId</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>params: <a href="../modules.html#findstructs" class="tsd-signature-type" data-tsd-kind="Type alias">FindStructs</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules.html#anypostid" class="tsd-signature-type" data-tsd-kind="Type alias">AnyPostId</a><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/interfaces.post.html" class="tsd-signature-type" data-tsd-kind="Interface">Post</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>An array of data about desired posts from Subsocial blockchain. If no corresponding posts to given array
+							of <code>ids</code> and <code>visibility</code>, an empty array is returned.</p>
 						</li>
 					</ul>
 				</section>
@@ -461,16 +476,26 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dappforce/subsocial-js/blob/aca316e/packages/api/src/api/substrate.ts#L162">packages/api/src/api/substrate.ts:162</a></li>
+									<li>Defined in <a href="https://github.com/F3Joule/dappforce-subsocial-js/blob/899fd50/packages/api/src/api/substrate.ts#L229">packages/api/src/api/substrate.ts:229</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Find and load information about a reaction from Subsocial blockchain by a given <code>id</code>.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>id: <a href="../modules.html#anyreactionid" class="tsd-signature-type" data-tsd-kind="Type alias">AnyReactionId</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Id of desired reaction.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/interfaces.reaction.html" class="tsd-signature-type" data-tsd-kind="Interface">Reaction</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>Data about desired reaction from Subsocial blockchain. If no corresponding reaction to given <code>id</code>,
+							<code>undefined</code> is returned.</p>
 						</li>
 					</ul>
 				</section>
@@ -484,16 +509,26 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dappforce/subsocial-js/blob/aca316e/packages/api/src/api/substrate.ts#L143">packages/api/src/api/substrate.ts:143</a></li>
+									<li>Defined in <a href="https://github.com/F3Joule/dappforce-subsocial-js/blob/899fd50/packages/api/src/api/substrate.ts#L180">packages/api/src/api/substrate.ts:180</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Find and load an array of information about reactions from Subsocial blockchain by a given array of <code>ids</code>.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>ids: <a href="../modules.html#anyreactionid" class="tsd-signature-type" data-tsd-kind="Type alias">AnyReactionId</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>An array of ids of desired reactions.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/interfaces.reaction.html" class="tsd-signature-type" data-tsd-kind="Interface">Reaction</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>An array of data about desired reactions from Subsocial blockchain. If no corresponding reactions to given
+							array of <code>ids</code>, an empty array is returned.</p>
 						</li>
 					</ul>
 				</section>
@@ -507,16 +542,26 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dappforce/subsocial-js/blob/aca316e/packages/api/src/api/substrate.ts#L158">packages/api/src/api/substrate.ts:158</a></li>
+									<li>Defined in <a href="https://github.com/F3Joule/dappforce-subsocial-js/blob/899fd50/packages/api/src/api/substrate.ts#L217">packages/api/src/api/substrate.ts:217</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Find and load information about a profile from Subsocial blockchain by a given <code>id</code>.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>id: <a href="../modules.html#anyaccountid" class="tsd-signature-type" data-tsd-kind="Type alias">AnyAccountId</a></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Account id of desired profile.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/dto.html#socialaccountwithid" class="tsd-signature-type" data-tsd-kind="Type alias">SocialAccountWithId</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>Data about desired profile from Subsocial blockchain. If no corresponding profile to given <code>id</code>,
+							<code>undefined</code> is returned.</p>
 						</li>
 					</ul>
 				</section>
@@ -530,16 +575,27 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dappforce/subsocial-js/blob/aca316e/packages/api/src/api/substrate.ts#L138">packages/api/src/api/substrate.ts:138</a></li>
+									<li>Defined in <a href="https://github.com/F3Joule/dappforce-subsocial-js/blob/899fd50/packages/api/src/api/substrate.ts#L167">packages/api/src/api/substrate.ts:167</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Find and load an array of information about social profiles from Subsocial blockchain by a given array of account
+									<code>ids</code>.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>ids: <a href="../modules.html#anyaccountid" class="tsd-signature-type" data-tsd-kind="Type alias">AnyAccountId</a><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>An array of account ids of desired profiles.</p>
+									</div>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../modules/dto.html#socialaccountwithid" class="tsd-signature-type" data-tsd-kind="Type alias">SocialAccountWithId</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>An array of data about desired profiles from Subsocial blockchain. If no corresponding profiles to given
+							array of <code>ids</code>, an empty array is returned.</p>
 						</li>
 					</ul>
 				</section>
@@ -547,22 +603,29 @@
 					<a name="findspace" class="tsd-anchor"></a>
 					<h3>find<wbr>Space</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">find<wbr>Space<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><a href="../modules.html#findstruct" class="tsd-signature-type" data-tsd-kind="Type alias">FindStruct</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules.html#anyspaceid" class="tsd-signature-type" data-tsd-kind="Type alias">AnySpaceId</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/interfaces.space.html" class="tsd-signature-type" data-tsd-kind="Interface">Space</a><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">find<wbr>Space<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><a href="../modules.html#findstruct" class="tsd-signature-type" data-tsd-kind="Type alias">FindStruct</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules.html#anyspaceid" class="tsd-signature-type" data-tsd-kind="Type alias">AnySpaceId</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/interfaces.space.html" class="tsd-signature-type" data-tsd-kind="Interface">Space</a><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dappforce/subsocial-js/blob/aca316e/packages/api/src/api/substrate.ts#L150">packages/api/src/api/substrate.ts:150</a></li>
+									<li>Defined in <a href="https://github.com/F3Joule/dappforce-subsocial-js/blob/899fd50/packages/api/src/api/substrate.ts#L193">packages/api/src/api/substrate.ts:193</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Find and load information about a space from Subsocial blockchain by a given <code>id</code> and <code>visibility</code> filter.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>__namedParameters: <a href="../modules.html#findstruct" class="tsd-signature-type" data-tsd-kind="Type alias">FindStruct</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules.html#anyspaceid" class="tsd-signature-type" data-tsd-kind="Type alias">AnySpaceId</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>params: <a href="../modules.html#findstruct" class="tsd-signature-type" data-tsd-kind="Type alias">FindStruct</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules.html#anyspaceid" class="tsd-signature-type" data-tsd-kind="Type alias">AnySpaceId</a><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/interfaces.space.html" class="tsd-signature-type" data-tsd-kind="Interface">Space</a><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>Data about desired space from Subsocial blockchain. If no corresponding space to given <code>id</code> and
+							<code>visibility</code>, <code>undefined</code> is returned.</p>
 						</li>
 					</ul>
 				</section>
@@ -570,22 +633,30 @@
 					<a name="findspaces" class="tsd-anchor"></a>
 					<h3>find<wbr>Spaces</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">find<wbr>Spaces<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><a href="../modules.html#findstructs" class="tsd-signature-type" data-tsd-kind="Type alias">FindStructs</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules.html#anyspaceid" class="tsd-signature-type" data-tsd-kind="Type alias">AnySpaceId</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/interfaces.space.html" class="tsd-signature-type" data-tsd-kind="Interface">Space</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">find<wbr>Spaces<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><a href="../modules.html#findstructs" class="tsd-signature-type" data-tsd-kind="Type alias">FindStructs</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules.html#anyspaceid" class="tsd-signature-type" data-tsd-kind="Type alias">AnySpaceId</a><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/interfaces.space.html" class="tsd-signature-type" data-tsd-kind="Interface">Space</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dappforce/subsocial-js/blob/aca316e/packages/api/src/api/substrate.ts#L128">packages/api/src/api/substrate.ts:128</a></li>
+									<li>Defined in <a href="https://github.com/F3Joule/dappforce-subsocial-js/blob/899fd50/packages/api/src/api/substrate.ts#L139">packages/api/src/api/substrate.ts:139</a></li>
 								</ul>
 							</aside>
+							<div class="tsd-comment tsd-typography">
+								<div class="lead">
+									<p>Find and load an array of information about spaces from Subsocial blockchain by a given array of <code>ids</code> and
+									<code>visibility</code> filter.</p>
+								</div>
+							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>__namedParameters: <a href="../modules.html#findstructs" class="tsd-signature-type" data-tsd-kind="Type alias">FindStructs</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules.html#anyspaceid" class="tsd-signature-type" data-tsd-kind="Type alias">AnySpaceId</a><span class="tsd-signature-symbol">&gt;</span></h5>
+									<h5>params: <a href="../modules.html#findstructs" class="tsd-signature-type" data-tsd-kind="Type alias">FindStructs</a><span class="tsd-signature-symbol">&lt;</span><a href="../modules.html#anyspaceid" class="tsd-signature-type" data-tsd-kind="Type alias">AnySpaceId</a><span class="tsd-signature-symbol">&gt;</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/interfaces.space.html" class="tsd-signature-type" data-tsd-kind="Interface">Space</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></h4>
+							<p>An array of data about desired spaces from Subsocial blockchain. If no corresponding spaces to given array
+							of <code>ids</code> and <code>visibility</code>, an empty array is returned.</p>
 						</li>
 					</ul>
 				</section>
@@ -599,7 +670,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dappforce/subsocial-js/blob/aca316e/packages/api/src/api/substrate.ts#L89">packages/api/src/api/substrate.ts:89</a></li>
+									<li>Defined in <a href="https://github.com/F3Joule/dappforce-subsocial-js/blob/899fd50/packages/api/src/api/substrate.ts#L93">packages/api/src/api/substrate.ts:93</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-type-parameters-title">Type parameters</h4>
@@ -631,7 +702,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dappforce/subsocial-js/blob/aca316e/packages/api/src/api/substrate.ts#L185">packages/api/src/api/substrate.ts:185</a></li>
+									<li>Defined in <a href="https://github.com/F3Joule/dappforce-subsocial-js/blob/899fd50/packages/api/src/api/substrate.ts#L252">packages/api/src/api/substrate.ts:252</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -654,7 +725,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dappforce/subsocial-js/blob/aca316e/packages/api/src/api/substrate.ts#L40">packages/api/src/api/substrate.ts:40</a></li>
+									<li>Defined in <a href="https://github.com/F3Joule/dappforce-subsocial-js/blob/899fd50/packages/api/src/api/substrate.ts#L41">packages/api/src/api/substrate.ts:41</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -677,7 +748,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dappforce/subsocial-js/blob/aca316e/packages/api/src/api/substrate.ts#L228">packages/api/src/api/substrate.ts:228</a></li>
+									<li>Defined in <a href="https://github.com/F3Joule/dappforce-subsocial-js/blob/899fd50/packages/api/src/api/substrate.ts#L295">packages/api/src/api/substrate.ts:295</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -703,7 +774,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dappforce/subsocial-js/blob/aca316e/packages/api/src/api/substrate.ts#L81">packages/api/src/api/substrate.ts:81</a></li>
+									<li>Defined in <a href="https://github.com/F3Joule/dappforce-subsocial-js/blob/899fd50/packages/api/src/api/substrate.ts#L85">packages/api/src/api/substrate.ts:85</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -729,7 +800,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dappforce/subsocial-js/blob/aca316e/packages/api/src/api/substrate.ts#L193">packages/api/src/api/substrate.ts:193</a></li>
+									<li>Defined in <a href="https://github.com/F3Joule/dappforce-subsocial-js/blob/899fd50/packages/api/src/api/substrate.ts#L260">packages/api/src/api/substrate.ts:260</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -752,7 +823,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dappforce/subsocial-js/blob/aca316e/packages/api/src/api/substrate.ts#L177">packages/api/src/api/substrate.ts:177</a></li>
+									<li>Defined in <a href="https://github.com/F3Joule/dappforce-subsocial-js/blob/899fd50/packages/api/src/api/substrate.ts#L244">packages/api/src/api/substrate.ts:244</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -775,7 +846,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dappforce/subsocial-js/blob/aca316e/packages/api/src/api/substrate.ts#L212">packages/api/src/api/substrate.ts:212</a></li>
+									<li>Defined in <a href="https://github.com/F3Joule/dappforce-subsocial-js/blob/899fd50/packages/api/src/api/substrate.ts#L279">packages/api/src/api/substrate.ts:279</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -795,19 +866,19 @@
 					<a name="isbooleanbyaccount" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> is<wbr>Boolean<wbr>ByAccount</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">is<wbr>Boolean<wbr>ByAccount<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">StorageItem</span>, accountId<span class="tsd-signature-symbol">: </span><a href="../modules.html#anyaccountid" class="tsd-signature-type" data-tsd-kind="Type alias">AnyAccountId</a>, subjectId<span class="tsd-signature-symbol">: </span><a href="../modules.html#substrateid" class="tsd-signature-type" data-tsd-kind="Type alias">SubstrateId</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">is<wbr>Boolean<wbr>ByAccount<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">StorageItem</span>, accountId<span class="tsd-signature-symbol">: </span><a href="../modules.html#anyaccountid" class="tsd-signature-type" data-tsd-kind="Type alias">AnyAccountId</a>, subjectId<span class="tsd-signature-symbol">: </span><a href="../modules.html#substrateid" class="tsd-signature-type" data-tsd-kind="Type alias">SubstrateId</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dappforce/subsocial-js/blob/aca316e/packages/api/src/api/substrate.ts#L75">packages/api/src/api/substrate.ts:75</a></li>
+									<li>Defined in <a href="https://github.com/F3Joule/dappforce-subsocial-js/blob/899fd50/packages/api/src/api/substrate.ts#L78">packages/api/src/api/substrate.ts:78</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>__namedParameters: <span class="tsd-signature-type">StorageItem</span></h5>
+									<h5>params: <span class="tsd-signature-type">StorageItem</span></h5>
 								</li>
 								<li>
 									<h5>accountId: <a href="../modules.html#anyaccountid" class="tsd-signature-type" data-tsd-kind="Type alias">AnyAccountId</a></h5>
@@ -830,7 +901,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dappforce/subsocial-js/blob/aca316e/packages/api/src/api/substrate.ts#L224">packages/api/src/api/substrate.ts:224</a></li>
+									<li>Defined in <a href="https://github.com/F3Joule/dappforce-subsocial-js/blob/899fd50/packages/api/src/api/substrate.ts#L291">packages/api/src/api/substrate.ts:291</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -856,7 +927,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dappforce/subsocial-js/blob/aca316e/packages/api/src/api/substrate.ts#L220">packages/api/src/api/substrate.ts:220</a></li>
+									<li>Defined in <a href="https://github.com/F3Joule/dappforce-subsocial-js/blob/899fd50/packages/api/src/api/substrate.ts#L287">packages/api/src/api/substrate.ts:287</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -882,7 +953,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dappforce/subsocial-js/blob/aca316e/packages/api/src/api/substrate.ts#L173">packages/api/src/api/substrate.ts:173</a></li>
+									<li>Defined in <a href="https://github.com/F3Joule/dappforce-subsocial-js/blob/899fd50/packages/api/src/api/substrate.ts#L240">packages/api/src/api/substrate.ts:240</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/interfaces.postid.html" class="tsd-signature-type" data-tsd-kind="Interface">PostId</a><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -899,7 +970,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dappforce/subsocial-js/blob/aca316e/packages/api/src/api/substrate.ts#L169">packages/api/src/api/substrate.ts:169</a></li>
+									<li>Defined in <a href="https://github.com/F3Joule/dappforce-subsocial-js/blob/899fd50/packages/api/src/api/substrate.ts#L236">packages/api/src/api/substrate.ts:236</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><a href="../interfaces/interfaces.spaceid.html" class="tsd-signature-type" data-tsd-kind="Interface">SpaceId</a><span class="tsd-signature-symbol">&gt;</span></h4>
@@ -916,7 +987,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dappforce/subsocial-js/blob/aca316e/packages/api/src/api/substrate.ts#L205">packages/api/src/api/substrate.ts:205</a></li>
+									<li>Defined in <a href="https://github.com/F3Joule/dappforce-subsocial-js/blob/899fd50/packages/api/src/api/substrate.ts#L272">packages/api/src/api/substrate.ts:272</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -933,19 +1004,19 @@
 					<a name="querypallet" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> query<wbr>Pallet</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">query<wbr>Pallet<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">StorageItem</span>, value<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">query<wbr>Pallet<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">StorageItem</span>, value<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dappforce/subsocial-js/blob/aca316e/packages/api/src/api/substrate.ts#L52">packages/api/src/api/substrate.ts:52</a></li>
+									<li>Defined in <a href="https://github.com/F3Joule/dappforce-subsocial-js/blob/899fd50/packages/api/src/api/substrate.ts#L53">packages/api/src/api/substrate.ts:53</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>__namedParameters: <span class="tsd-signature-type">StorageItem</span></h5>
+									<h5>params: <span class="tsd-signature-type">StorageItem</span></h5>
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagOptional">Optional</span> value: <span class="tsd-signature-type">any</span></h5>
@@ -959,19 +1030,19 @@
 					<a name="querypalletmulti" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagPrivate">Private</span> query<wbr>Pallet<wbr>Multi</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-private">
-						<li class="tsd-signature tsd-kind-icon">query<wbr>Pallet<wbr>Multi<span class="tsd-signature-symbol">(</span>__namedParameters<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">StorageItem</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
+						<li class="tsd-signature tsd-kind-icon">query<wbr>Pallet<wbr>Multi<span class="tsd-signature-symbol">(</span>params<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">StorageItem</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">Promise</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">&gt;</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dappforce/subsocial-js/blob/aca316e/packages/api/src/api/substrate.ts#L69">packages/api/src/api/substrate.ts:69</a></li>
+									<li>Defined in <a href="https://github.com/F3Joule/dappforce-subsocial-js/blob/899fd50/packages/api/src/api/substrate.ts#L71">packages/api/src/api/substrate.ts:71</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>__namedParameters: <span class="tsd-signature-type">StorageItem</span></h5>
+									<h5>params: <span class="tsd-signature-type">StorageItem</span></h5>
 								</li>
 								<li>
 									<h5>value: <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></h5>
@@ -991,7 +1062,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dappforce/subsocial-js/blob/aca316e/packages/api/src/api/substrate.ts#L57">packages/api/src/api/substrate.ts:57</a></li>
+									<li>Defined in <a href="https://github.com/F3Joule/dappforce-subsocial-js/blob/899fd50/packages/api/src/api/substrate.ts#L59">packages/api/src/api/substrate.ts:59</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1017,7 +1088,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dappforce/subsocial-js/blob/aca316e/packages/api/src/api/substrate.ts#L65">packages/api/src/api/substrate.ts:65</a></li>
+									<li>Defined in <a href="https://github.com/F3Joule/dappforce-subsocial-js/blob/899fd50/packages/api/src/api/substrate.ts#L67">packages/api/src/api/substrate.ts:67</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1043,7 +1114,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dappforce/subsocial-js/blob/aca316e/packages/api/src/api/substrate.ts#L61">packages/api/src/api/substrate.ts:61</a></li>
+									<li>Defined in <a href="https://github.com/F3Joule/dappforce-subsocial-js/blob/899fd50/packages/api/src/api/substrate.ts#L63">packages/api/src/api/substrate.ts:63</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1069,7 +1140,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dappforce/subsocial-js/blob/aca316e/packages/api/src/api/substrate.ts#L197">packages/api/src/api/substrate.ts:197</a></li>
+									<li>Defined in <a href="https://github.com/F3Joule/dappforce-subsocial-js/blob/899fd50/packages/api/src/api/substrate.ts#L264">packages/api/src/api/substrate.ts:264</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -1092,7 +1163,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/dappforce/subsocial-js/blob/aca316e/packages/api/src/api/substrate.ts#L201">packages/api/src/api/substrate.ts:201</a></li>
+									<li>Defined in <a href="https://github.com/F3Joule/dappforce-subsocial-js/blob/899fd50/packages/api/src/api/substrate.ts#L268">packages/api/src/api/substrate.ts:268</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
